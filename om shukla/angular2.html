@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myapp">
+<div ng-controller="hellocontroller">
+<h2>hello{{helloTo.title}}</h2>
+</div>
+
+
+<script>
+angular.module("myapp",[])
+.controller("hellocontroller",function($scope)
+{
+  $scope.helloTo={};
+  $scope.helloTo.title=" welcome to rcpit .Angular js"
+});
+
+</script>
+
+
+</body>
+</html>
